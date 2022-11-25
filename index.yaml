@@ -1,0 +1,36 @@
+apiVersion: v1
+entries:
+  auth-service:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-25T08:03:23.948427758Z"
+    description: A Helm chart for Kubernetes
+    digest: 9a60e41d63b5783f39c31a8d4657dbccfe5f0869e08bf0ea28ab843a11910784
+    name: auth-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/auth-service-0.1.0/auth-service-0.1.0.tgz
+    version: 0.1.0
+  game-service:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-25T08:03:24.152509753Z"
+    description: A Helm chart for Kubernetes
+    digest: db94202997446bcbb612adefcc76e90446b0ca91e16d7b68015eba3745ce15ac
+    name: game-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/game-service-0.1.0/game-service-0.1.0.tgz
+    version: 0.1.0
+  match-service:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-25T08:03:24.318115105Z"
+    description: A Helm chart for Kubernetes
+    digest: 7d0560f06428a21b66b6f735fa926dbacb2fc4e54c79be3f9c788aeb7f547bdf
+    name: match-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/match-service-0.1.0/match-service-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-11-25T08:03:23.696127688Z"
