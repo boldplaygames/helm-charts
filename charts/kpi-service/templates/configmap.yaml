@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-configmap
+  namespace: {{ .Release.Namespace }}
+  creationTimestamp: 2023-08-02T10:00:00Z
+data:
+  MQ_URL: {{ .Values.config.mqURL | quote }}
+  REDIS_URL: {{ .Values.config.redisURL | quote }}
+  LOG_LEVEL: {{ .Values.config.logLevel | quote }}
+  UTC_L: {{ .Values.config.utcL | quote }}

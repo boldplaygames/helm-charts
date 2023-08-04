@@ -1,0 +1,38 @@
+isAWS: false
+
+replicaCount: 1
+
+image:
+  repository: 172.21.101.91:32000/kpi-service
+  pullPolicy: IfNotPresent
+  tag: "latest"
+
+service:
+  type: ClusterIP
+  port: 8189
+  targetPort: 8009
+
+containerPort: 8009
+
+config:            
+  mqURL: "bpg-nats:4222"
+  redisURL: "172.21.101.93:6379"
+  utcL: 9 # UTC+9, UTC-9 -> -9
+  logLevel: "dev"   # dev, stage, prod
+  
+serviceAccount:
+  name: ""
+
+podAnnotations:
+  sidecar.istio.io/inject: "false"
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 128Mi
+  limits:
+    cpu: 300m
+    memory: 512Mi
+
+autoscaling:
+  enabled: false

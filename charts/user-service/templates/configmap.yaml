@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-configmap
+  namespace: {{ .Release.Namespace }}
+  creationTimestamp: 2023-03-31T10:00:00Z
+data:
+  MQ_URL: {{ .Values.config.mqURL | quote }}
+  LOG_LEVEL: {{ .Values.config.logLevel | quote }}

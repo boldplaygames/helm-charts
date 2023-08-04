@@ -1,0 +1,33 @@
+isAWS: true
+
+replicaCount: 1
+
+image:
+  repository: 082675554211.dkr.ecr.ap-northeast-2.amazonaws.com/match-service
+  pullPolicy: IfNotPresent
+  tag: "v0.0.2"
+
+config:            
+  mqURL: "bs-nats:4222"
+  redisURL: "clustercfg.bs-ea-qa-redis.g12qrp.memorydb.ap-northeast-2.amazonaws.com:6379"
+  maxRoom: 100
+  maxPlayer: 1000
+  defaultChanSize: 100
+  logLevel: "stage"   # dev, stage, prod
+
+serviceAccount:
+  name: ""
+
+podAnnotations:
+  sidecar.istio.io/inject: "false"
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 128Mi
+  limits:
+    cpu: 300m
+    memory: 512Mi
+
+autoscaling:
+  enabled: false

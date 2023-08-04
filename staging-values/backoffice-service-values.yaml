@@ -1,0 +1,38 @@
+isAWS: true
+
+replicaCount: 1
+
+image:
+  repository: 082675554211.dkr.ecr.ap-northeast-2.amazonaws.com/backoffice-service
+  pullPolicy: IfNotPresent
+  tag: "v0.0.2"
+
+service:
+  type: ClusterIP
+  port: 8481
+  targetPort: 8401
+
+containerPort: 8401
+
+config:            
+  mqURL: "bs-nats:4222"
+  lbIP: "52.78.127.20/32"
+  jwtTimeout: 30      # Minute
+  logLevel: "stage"   # dev, stage, prod
+  
+serviceAccount:
+  name: ""
+
+podAnnotations:
+  sidecar.istio.io/inject: "false"
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 128Mi
+  limits:
+    cpu: 300m
+    memory: 512Mi
+
+autoscaling:
+  enabled: false

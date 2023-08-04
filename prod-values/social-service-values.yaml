@@ -1,0 +1,30 @@
+isAWS: true
+
+replicaCount: 1
+
+image:
+  repository: 082675554211.dkr.ecr.ap-northeast-2.amazonaws.com/social-service
+  pullPolicy: IfNotPresent
+  tag: "v0.1.1"
+
+config:            
+  mqURL: "bs-nats:4222"
+  redisURL: "clustercfg.bs-stage-ae.g12qrp.memorydb.ap-northeast-2.amazonaws.com:6379"
+  logLevel: "prod"   # dev, stage, prod
+
+serviceAccount:
+  name: ""
+
+podAnnotations:
+  sidecar.istio.io/inject: "false"
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 128Mi
+  limits:
+    cpu: 300m
+    memory: 512Mi
+
+autoscaling:
+  enabled: false
