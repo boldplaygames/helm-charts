@@ -3,6 +3,16 @@ entries:
   api-service:
   - apiVersion: v2
     appVersion: 0.1.1
+    created: "2023-09-13T01:34:37.377352897Z"
+    description: A Helm chart for Kubernetes
+    digest: 38f2583c7c8b051396e594eeba73538f24e8eacaba4491b28cb6ecd3d7c87326
+    name: api-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/api-service-0.1.2/api-service-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 0.1.1
     created: "2023-08-04T00:49:12.034644344Z"
     description: A Helm chart for Kubernetes
     digest: 0bbe3152f6d6efb405e1ba66fc09bdc2d4e2b6c6a877a0b8f527a470b861c444
@@ -12,6 +22,16 @@ entries:
     - https://github.com/boldplaygames/helm-charts/releases/download/api-service-0.1.0/api-service-0.1.0.tgz
     version: 0.1.0
   backoffice-service:
+  - apiVersion: v2
+    appVersion: 0.1.1
+    created: "2023-09-13T01:34:37.578599858Z"
+    description: A Helm chart for Kubernetes
+    digest: fa9ea491cc60f52bae1e916deb4e7d0e92d0f5b2f9e49aec98172e900b023f58
+    name: backoffice-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/backoffice-service-0.1.2/backoffice-service-0.1.2.tgz
+    version: 0.1.2
   - apiVersion: v2
     appVersion: 0.0.1
     created: "2023-08-04T00:49:12.222223408Z"
@@ -132,4 +152,4 @@ entries:
     urls:
     - https://github.com/boldplaygames/helm-charts/releases/download/user-service-0.1.0/user-service-0.1.0.tgz
     version: 0.1.0
-generated: "2023-08-04T00:49:14.269464572Z"
+generated: "2023-09-13T01:34:37.578610058Z"
