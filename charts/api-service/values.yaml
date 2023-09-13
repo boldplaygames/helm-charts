@@ -16,7 +16,6 @@ containerPort: 8001
 
 config:            
   mqURL: "bpg-nats:4222"  
-  lbIP: "172.21.101.211/32" # CIDR
   jwtTimeout: 20    # Minute
   logLevel: "dev"   # dev, stage, prod
   

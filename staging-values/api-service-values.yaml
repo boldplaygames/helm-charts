@@ -16,7 +16,6 @@ containerPort: 8001
 
 config:            
   mqURL: "bs-nats:4222"
-  lbIP: "52.78.127.20/32"
   jwtTimeout: 15      # Minute
   logLevel: "stage"   # dev, stage, prod
 

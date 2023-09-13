@@ -16,9 +16,9 @@ containerPort: 8401
 
 config:            
   mqURL: "bs-nats:4222"
-  lbIP: ""
   jwtTimeout: 30      # Minute
   logLevel: "prod"   # dev, stage, prod
+  region: "EA"
   
 serviceAccount:
   name: ""
