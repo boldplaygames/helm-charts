@@ -17,7 +17,6 @@ containerPort: 8009
 config:            
   mqURL: "bpg-nats:4222"
   redisURL: "172.21.101.93:6379"
-  utcL: 9 # UTC+9, UTC-9 -> -9
   logLevel: "dev"   # dev, stage, prod
   
 serviceAccount:

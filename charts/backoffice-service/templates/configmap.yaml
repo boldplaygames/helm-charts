@@ -7,5 +7,4 @@ metadata:
 data:
   MQ_URL: {{ .Values.config.mqURL | quote }}
   JWT_TIMEOUT: {{ .Values.config.jwtTimeout | quote }}
-  REGION: {{ .Values.config.region | quote }}
   LOG_LEVEL: {{ .Values.config.logLevel | quote }}

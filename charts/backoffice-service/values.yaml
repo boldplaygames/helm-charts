@@ -18,7 +18,6 @@ config:
   mqURL: "bpg-nats:4222"
   jwtTimeout: 30    # Minute
   logLevel: "dev"   # dev, stage, prod
-  region: "EA"
   
 serviceAccount:
   name: ""
