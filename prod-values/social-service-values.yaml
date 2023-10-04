@@ -9,7 +9,7 @@ image:
 
 config:            
   mqURL: "bs-nats:4222"
-  redisURL: "clustercfg.bs-stage-ae.g12qrp.memorydb.ap-northeast-2.amazonaws.com:6379"
+  redisURL: ["clustercfg.bs-ea.g12qrp.memorydb.ap-northeast-2.amazonaws.com:6379","clustercfg.bs-ea.g12qrp.memorydb.ap-northeast-2.amazonaws.com:6379"]
   logLevel: "prod"   # dev, stage, prod
 
 serviceAccount:

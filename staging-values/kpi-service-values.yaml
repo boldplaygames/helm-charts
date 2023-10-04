@@ -16,7 +16,7 @@ containerPort: 8009
 
 config:            
   mqURL: "bs-nats:4222"
-  redisURL: "clustercfg.bs-ea-qa-redis.g12qrp.memorydb.ap-northeast-2.amazonaws.com:6379"
+  redisURL: ["clustercfg.bs-ea-qa-redis.g12qrp.memorydb.ap-northeast-2.amazonaws.com:6379"]
   utcL: 9 # UTC+9, UTC-9 -> -9  
   logLevel: "stage"   # dev, stage, prod
 
