@@ -8,7 +8,6 @@ image:
   tag: "latest"
 
 config:            
-  mqURL: "172.21.101.83:4222"
   logLevel: "dev"   # dev, stage, prod
 
 serviceAccount:

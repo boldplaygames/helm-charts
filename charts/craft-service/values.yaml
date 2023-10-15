@@ -8,7 +8,6 @@ image:
   tag: "latest"
 
 config:            
-  mqURL: "bpg-nats:4222"
   logLevel: "dev"   # dev, stage, prod
 
 serviceAccount:

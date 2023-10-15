@@ -5,10 +5,9 @@ replicaCount: 1
 image:
   repository: 082675554211.dkr.ecr.ap-northeast-2.amazonaws.com/dedi-service
   pullPolicy: IfNotPresent
-  tag: "v0.1.0"
+  tag: "v0.3.0"
 
 config:            
-  mqURL: "bs-nats:4222"
   logLevel: "prod"   # dev, stage, prod
 
 serviceAccount:

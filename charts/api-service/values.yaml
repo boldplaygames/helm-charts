@@ -15,7 +15,6 @@ service:
 containerPort: 8001
 
 config:            
-  mqURL: "bpg-nats:4222"  
   jwtTimeout: 20    # Minute
   logLevel: "dev"   # dev, stage, prod
   

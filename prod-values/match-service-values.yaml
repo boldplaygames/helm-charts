@@ -5,11 +5,9 @@ replicaCount: 1
 image:
   repository: 082675554211.dkr.ecr.ap-northeast-2.amazonaws.com/match-service
   pullPolicy: IfNotPresent
-  tag: "v0.1.1"
+  tag: "v0.3.0"
 
 config:            
-  mqURL: "bs-nats:4222"
-  redisURL: "clustercfg.bs-ea.g12qrp.memorydb.ap-northeast-2.amazonaws.com:6379 clustercfg.bs-ea.g12qrp.memorydb.ap-northeast-2.amazonaws.com:6379"
   maxRoom: 2000
   maxPlayer: 20000
   defaultChanSize: 500

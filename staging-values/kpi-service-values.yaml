@@ -5,7 +5,7 @@ replicaCount: 1
 image:
   repository: 082675554211.dkr.ecr.ap-northeast-2.amazonaws.com/kpi-service
   pullPolicy: IfNotPresent
-  tag: "v0.1.0"
+  tag: "v0.2.0"
 
 service:
   type: ClusterIP
@@ -15,8 +15,6 @@ service:
 containerPort: 8009
 
 config:            
-  mqURL: "bs-nats:4222"
-  redisURL: "clustercfg.bs-ea-qa-redis.g12qrp.memorydb.ap-northeast-2.amazonaws.com:6379"
   utcL: 9 # UTC+9, UTC-9 -> -9  
   logLevel: "stage"   # dev, stage, prod
 

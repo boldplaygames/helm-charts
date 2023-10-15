@@ -8,8 +8,6 @@ image:
   tag: "latest"
 
 config:            
-  mqURL: "bpg-nats:4222"
-  redisURL: "172.21.101.93:6379"
   maxRoom: 100
   maxPlayer: 200
   defaultChanSize: 100

@@ -8,8 +8,6 @@ image:
   tag: "latest"
 
 config:            
-  mqURL: "bpg-nats:4222"
-  redisURL: "172.21.101.93:6379"
   logLevel: "dev"   # dev, stage, prod
 
 serviceAccount:

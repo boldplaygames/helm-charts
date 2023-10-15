@@ -5,7 +5,7 @@ replicaCount: 1
 image:
   repository: 082675554211.dkr.ecr.ap-northeast-2.amazonaws.com/backoffice-service
   pullPolicy: IfNotPresent
-  tag: "v0.1.0"
+  tag: "v0.2.0"
 
 service:
   type: ClusterIP
@@ -15,7 +15,6 @@ service:
 containerPort: 8401
 
 config:            
-  mqURL: "bs-nats:4222"
   jwtTimeout: 30      # Minute
   logLevel: "stage"   # dev, stage, prod
   

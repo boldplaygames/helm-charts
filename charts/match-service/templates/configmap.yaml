@@ -3,10 +3,8 @@ kind: ConfigMap
 metadata:
   name: {{ .Release.Name }}-configmap
   namespace: {{ .Release.Namespace }}
-  creationTimestamp: 2023-08-02T10:00:00Z
+  creationTimestamp: 2023-10-15T17:40:00Z
 data:
-  MQ_URL: {{ .Values.config.mqURL | quote }}
-  REDIS_URL: {{ .Values.config.redisURL | quote }}
   MAX_ROOM:  {{ .Values.config.maxRoom | quote }}
   MAX_PLAYER:  {{ .Values.config.maxPlayer | quote }}
   DEFAULT_CHAN_SIZE:  {{ .Values.config.defaultChanSize | quote }}
