@@ -10,7 +10,7 @@ image:
 config:            
   maxRoom: 100
   maxPlayer: 200
-  defaultChanSize: 100
+  defaultChanSize: 1000
   logLevel: "dev"   # dev, stage, prod
 
 serviceAccount:
