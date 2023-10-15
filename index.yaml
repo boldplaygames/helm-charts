@@ -2,6 +2,16 @@ apiVersion: v1
 entries:
   api-service:
   - apiVersion: v2
+    appVersion: 0.2.0
+    created: "2023-10-15T09:28:08.665505889Z"
+    description: A Helm chart for Kubernetes
+    digest: eaea518527336fb3c4da9212df32b541ad9714f18a4333e78260628035d58cd0
+    name: api-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/api-service-0.2.0/api-service-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
     appVersion: 0.1.1
     created: "2023-09-13T01:34:37.377352897Z"
     description: A Helm chart for Kubernetes
@@ -22,6 +32,16 @@ entries:
     - https://github.com/boldplaygames/helm-charts/releases/download/api-service-0.1.0/api-service-0.1.0.tgz
     version: 0.1.0
   backoffice-service:
+  - apiVersion: v2
+    appVersion: 0.2.0
+    created: "2023-10-15T09:28:08.813967079Z"
+    description: A Helm chart for Kubernetes
+    digest: c03c7a63f966251aa3a4a6122e7cb9ae0a7e2e9ced92d26e78ef87d16086c59d
+    name: backoffice-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/backoffice-service-0.2.0/backoffice-service-0.2.0.tgz
+    version: 0.2.0
   - apiVersion: v2
     appVersion: 0.1.1
     created: "2023-09-18T10:34:05.273371502Z"
@@ -54,6 +74,16 @@ entries:
     version: 0.1.0
   craft-service:
   - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2023-10-15T09:28:08.948375594Z"
+    description: A Helm chart for Kubernetes
+    digest: 3e3e38dac999ed3bff4393045cd55cdfd5d07e0998a6f14b88f18eb13377b470
+    name: craft-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/craft-service-0.2.0/craft-service-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
     appVersion: 0.0.1
     created: "2023-08-04T00:49:12.417492286Z"
     description: A Helm chart for Kubernetes
@@ -65,6 +95,16 @@ entries:
     version: 0.1.0
   dedi-service:
   - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2023-10-15T09:28:09.083928915Z"
+    description: A Helm chart for Kubernetes
+    digest: bfc594741c5c582e02656bde7732d30100f787c3415eac500251b0ce76406043
+    name: dedi-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/dedi-service-0.2.0/dedi-service-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
     appVersion: 0.0.1
     created: "2023-08-04T00:49:12.622122183Z"
     description: A Helm chart for Kubernetes
@@ -75,6 +115,16 @@ entries:
     - https://github.com/boldplaygames/helm-charts/releases/download/dedi-service-0.1.0/dedi-service-0.1.0.tgz
     version: 0.1.0
   game-service:
+  - apiVersion: v2
+    appVersion: 0.2.0
+    created: "2023-10-15T09:28:09.325348499Z"
+    description: A Helm chart for Kubernetes
+    digest: 54dd728ffbb685e3238fbfb2689d9e47306749ad839f747fc1680f7a7f84279a
+    name: game-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/game-service-0.2.0/game-service-0.2.0.tgz
+    version: 0.2.0
   - apiVersion: v2
     appVersion: 0.0.1
     created: "2023-10-04T11:14:49.808079481Z"
@@ -106,6 +156,16 @@ entries:
     - https://github.com/boldplaygames/helm-charts/releases/download/game-service-0.1.0/game-service-0.1.0.tgz
     version: 0.1.0
   kpi-service:
+  - apiVersion: v2
+    appVersion: 0.2.0
+    created: "2023-10-15T09:28:09.45338948Z"
+    description: A Helm chart for Kubernetes
+    digest: 4ce66799accf7e3eb6f316daa65d46b1cc91f16c626e7cefd0343c3c3c0c202f
+    name: kpi-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/kpi-service-0.2.0/kpi-service-0.2.0.tgz
+    version: 0.2.0
   - apiVersion: v2
     appVersion: 0.2.0
     created: "2023-10-15T09:06:41.848624521Z"
@@ -158,6 +218,16 @@ entries:
     version: 0.1.0
   match-service:
   - apiVersion: v2
+    appVersion: 0.2.0
+    created: "2023-10-15T09:28:09.595482145Z"
+    description: A Helm chart for Kubernetes
+    digest: 1e07871bfaaeefe1f7ef49654d4688e3735e0baf022feea07f0bd98aca7bdbdd
+    name: match-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/match-service-0.2.0/match-service-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
     appVersion: 0.0.1
     created: "2023-10-04T11:14:50.1995444Z"
     description: A Helm chart for Kubernetes
@@ -188,6 +258,16 @@ entries:
     - https://github.com/boldplaygames/helm-charts/releases/download/match-service-0.1.0/match-service-0.1.0.tgz
     version: 0.1.0
   rank-service:
+  - apiVersion: v2
+    appVersion: 0.2.0
+    created: "2023-10-15T09:28:09.724581294Z"
+    description: A Helm chart for Kubernetes
+    digest: a1448d442a76a38606a5cd544cf04cf337a9aad7da09bd27c62b419fbaef27f9
+    name: rank-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/rank-service-0.2.0/rank-service-0.2.0.tgz
+    version: 0.2.0
   - apiVersion: v2
     appVersion: 0.0.1
     created: "2023-10-04T11:14:50.357276675Z"
@@ -220,6 +300,16 @@ entries:
     version: 0.1.0
   shop-service:
   - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2023-10-15T09:28:09.85529225Z"
+    description: A Helm chart for Kubernetes
+    digest: ce9278f7f23c2246da21a95f058dd70632daeaadc438ef6b24e1d9fc70b6275e
+    name: shop-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/shop-service-0.2.0/shop-service-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
     appVersion: 0.0.1
     created: "2023-08-04T00:49:13.702057874Z"
     description: A Helm chart for Kubernetes
@@ -230,6 +320,16 @@ entries:
     - https://github.com/boldplaygames/helm-charts/releases/download/shop-service-0.1.0/shop-service-0.1.0.tgz
     version: 0.1.0
   social-service:
+  - apiVersion: v2
+    appVersion: 0.2.0
+    created: "2023-10-15T09:28:09.996774752Z"
+    description: A Helm chart for Kubernetes
+    digest: 1163b5c849ef2a8341b2f32cb05d815de2f4c4e09dfe54589e0a39e0aa3167e8
+    name: social-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/social-service-0.2.0/social-service-0.2.0.tgz
+    version: 0.2.0
   - apiVersion: v2
     appVersion: 0.0.1
     created: "2023-10-04T11:14:50.546299743Z"
@@ -262,6 +362,16 @@ entries:
     version: 0.1.0
   tgbot-service:
   - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2023-10-15T09:28:10.130154719Z"
+    description: A Helm chart for Kubernetes
+    digest: c29ab3746fd8e654b7abbcb5b5c97468bb3624ad111edc82d9ef2ea68f97e695
+    name: tgbot-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/tgbot-service-0.2.0/tgbot-service-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
     appVersion: 0.0.1
     created: "2023-08-04T00:49:14.085748917Z"
     description: A Helm chart for Kubernetes
@@ -273,6 +383,16 @@ entries:
     version: 0.1.0
   user-service:
   - apiVersion: v2
+    appVersion: 0.2.0
+    created: "2023-10-15T09:28:10.28080296Z"
+    description: A Helm chart for Kubernetes
+    digest: ad395976a726aa86eebaee391bd603843e579f61750e0c48fb5a502f8b6f026c
+    name: user-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/user-service-0.2.0/user-service-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
     appVersion: 0.0.1
     created: "2023-08-04T00:49:14.269456472Z"
     description: A Helm chart for Kubernetes
@@ -282,4 +402,4 @@ entries:
     urls:
     - https://github.com/boldplaygames/helm-charts/releases/download/user-service-0.1.0/user-service-0.1.0.tgz
     version: 0.1.0
-generated: "2023-10-15T09:06:41.848688025Z"
+generated: "2023-10-15T09:28:10.28092606Z"
