@@ -107,6 +107,16 @@ entries:
     version: 0.1.0
   kpi-service:
   - apiVersion: v2
+    appVersion: 0.2.0
+    created: "2023-10-15T09:06:41.848624521Z"
+    description: A Helm chart for Kubernetes
+    digest: f6ce2b85b32a14f448b9c36e005cab378fd773e8bd829033dc8fe6cb0cb3d616
+    name: kpi-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/kpi-service-0.1.4/kpi-service-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
     appVersion: 0.0.1
     created: "2023-10-04T11:14:49.984011868Z"
     description: A Helm chart for Kubernetes
@@ -272,4 +282,4 @@ entries:
     urls:
     - https://github.com/boldplaygames/helm-charts/releases/download/user-service-0.1.0/user-service-0.1.0.tgz
     version: 0.1.0
-generated: "2023-10-04T11:14:50.546376943Z"
+generated: "2023-10-15T09:06:41.848688025Z"
