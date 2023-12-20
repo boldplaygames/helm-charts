@@ -33,6 +33,16 @@ entries:
     version: 0.1.0
   backoffice-service:
   - apiVersion: v2
+    appVersion: 0.2.1
+    created: "2023-12-20T02:41:36.918466052Z"
+    description: A Helm chart for Kubernetes
+    digest: 95834cb955ff0f59ecef5b42e9e902ac3a7d70f136f55ac66da0324c7aafb014
+    name: backoffice-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/backoffice-service-0.2.1/backoffice-service-0.2.1.tgz
+    version: 0.2.1
+  - apiVersion: v2
     appVersion: 0.2.0
     created: "2023-10-15T09:28:08.813967079Z"
     description: A Helm chart for Kubernetes
@@ -298,6 +308,17 @@ entries:
     urls:
     - https://github.com/boldplaygames/helm-charts/releases/download/rank-service-0.1.0/rank-service-0.1.0.tgz
     version: 0.1.0
+  season-service:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2023-12-20T02:41:37.03748828Z"
+    description: A Helm chart for Kubernetes
+    digest: 317281c587fc2454f08b454b26ccd4c54fbd46aa0fd58430e9b28cf1dcd0801d
+    name: season-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/season-service-0.1.0/season-service-0.1.0.tgz
+    version: 0.1.0
   shop-service:
   - apiVersion: v2
     appVersion: 0.1.0
@@ -383,6 +404,16 @@ entries:
     version: 0.1.0
   user-service:
   - apiVersion: v2
+    appVersion: 0.2.1
+    created: "2023-12-20T02:41:37.180768954Z"
+    description: A Helm chart for Kubernetes
+    digest: b00dd43465e04560c61c5576644a4791e45493ddbbdeca2eecef59ad87818010
+    name: user-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/user-service-0.2.1/user-service-0.2.1.tgz
+    version: 0.2.1
+  - apiVersion: v2
     appVersion: 0.2.0
     created: "2023-10-15T09:28:10.28080296Z"
     description: A Helm chart for Kubernetes
@@ -402,4 +433,4 @@ entries:
     urls:
     - https://github.com/boldplaygames/helm-charts/releases/download/user-service-0.1.0/user-service-0.1.0.tgz
     version: 0.1.0
-generated: "2023-10-15T09:28:10.28092606Z"
+generated: "2023-12-20T02:41:37.180844444Z"
