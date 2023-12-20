@@ -50,8 +50,15 @@ spec:
               name: {{ .Release.Name }}-configmap
           - secretRef:
               name: bs-common-secret
+          volumeMounts:
+          - name: {{ .Values.pvc.name }}
+            mountPath: {{ .Values.pvc.mountPath }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
+      volumes: 
+      - name: {{ .Values.pvc.name }}
+        persistentVolumeClaim:
+          claimName: {{ .Values.pvc.claimName }}
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}

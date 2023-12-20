@@ -1,14 +1,14 @@
-isAWS: true
+isAWS: false
 
 replicaCount: 1
 
 image:
-  repository: 082675554211.dkr.ecr.ap-northeast-2.amazonaws.com/craft-service
+  repository: 172.21.101.91:32000/season-service
   pullPolicy: IfNotPresent
-  tag: "v0.2.0"
+  tag: "latest"
 
 config:            
-  logLevel: "stage"   # dev, stage, prod
+  logLevel: "dev"   # dev, stage, prod
 
 serviceAccount:
   name: ""

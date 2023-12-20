@@ -10,6 +10,11 @@ image:
 config:            
   logLevel: "dev"   # dev, stage, prod
 
+pvc:
+  name: "json-data"
+  mountPath: "/mnt/data/json"
+  claimName: "pvc-svc-json"
+
 serviceAccount:
   name: ""
 
