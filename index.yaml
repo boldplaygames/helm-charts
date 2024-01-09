@@ -33,6 +33,16 @@ entries:
     version: 0.1.0
   backoffice-service:
   - apiVersion: v2
+    appVersion: 0.2.2
+    created: "2024-01-09T02:57:20.406006634Z"
+    description: A Helm chart for Kubernetes
+    digest: 988316681dc709f8c3bdb9843c71605e24cde6e3c665f0b55505e66528cecb37
+    name: backoffice-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/backoffice-service-0.2.2/backoffice-service-0.2.2.tgz
+    version: 0.2.2
+  - apiVersion: v2
     appVersion: 0.2.1
     created: "2023-12-20T02:41:36.918466052Z"
     description: A Helm chart for Kubernetes
@@ -103,6 +113,17 @@ entries:
     urls:
     - https://github.com/boldplaygames/helm-charts/releases/download/craft-service-0.1.0/craft-service-0.1.0.tgz
     version: 0.1.0
+  datalake-service:
+  - apiVersion: v2
+    appVersion: 0.2.0
+    created: "2024-01-09T02:57:20.550206954Z"
+    description: A Helm chart for Kubernetes
+    digest: ad35eedf976dde418931f4b8850c88b3c7e643678b6c55d98769a5c5104eb26e
+    name: datalake-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/datalake-service-0.2.0/datalake-service-0.2.0.tgz
+    version: 0.2.0
   dedi-service:
   - apiVersion: v2
     appVersion: 0.1.0
@@ -404,6 +425,16 @@ entries:
     version: 0.1.0
   user-service:
   - apiVersion: v2
+    appVersion: 0.2.2
+    created: "2024-01-09T02:57:20.688208306Z"
+    description: A Helm chart for Kubernetes
+    digest: b4e5f95b1add7a2bdab892af509f4b982ac9224197085e4692a9d9f8af6af0a8
+    name: user-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/user-service-0.2.2/user-service-0.2.2.tgz
+    version: 0.2.2
+  - apiVersion: v2
     appVersion: 0.2.1
     created: "2023-12-20T02:41:37.180768954Z"
     description: A Helm chart for Kubernetes
@@ -433,4 +464,4 @@ entries:
     urls:
     - https://github.com/boldplaygames/helm-charts/releases/download/user-service-0.1.0/user-service-0.1.0.tgz
     version: 0.1.0
-generated: "2023-12-20T02:41:37.180844444Z"
+generated: "2024-01-09T02:57:20.688302812Z"
