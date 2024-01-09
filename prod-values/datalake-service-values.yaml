@@ -1,11 +1,11 @@
-isAWS: false
+isAWS: true
 
 replicaCount: 1
 
 image:
-  repository: 172.21.101.91:32000/kpi-service
+  repository: 082675554211.dkr.ecr.ap-northeast-2.amazonaws.com/datalake-service
   pullPolicy: IfNotPresent
-  tag: "latest"
+  tag: "v0.3.0"
 
 service:
   type: ClusterIP
@@ -15,10 +15,8 @@ service:
 containerPort: 8009
 
 config:            
-  mqURL: "bpg-nats:4222"
-  redisURL: "172.21.101.93:6379"
-  logLevel: "dev"   # dev, stage, prod
-  
+  logLevel: "prod"   # dev, stage, prod
+    
 serviceAccount:
   name: ""
 

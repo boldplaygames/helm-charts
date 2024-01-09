@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "kpi-service.fullname" . }}
+  name: {{ include "datalake-service.fullname" . }}
   labels:
-    {{- include "kpi-service.labels" . | nindent 4 }}
+    {{- include "datalake-service.labels" . | nindent 4 }}
 spec:
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
   {{- end }}
   selector:
     matchLabels:
-      {{- include "kpi-service.selectorLabels" . | nindent 6 }}
+      {{- include "datalake-service.selectorLabels" . | nindent 6 }}
   template:
     metadata:
       {{- with .Values.podAnnotations }}
@@ -18,13 +18,13 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       labels:
-        {{- include "kpi-service.selectorLabels" . | nindent 8 }}
+        {{- include "datalake-service.selectorLabels" . | nindent 8 }}
     spec:
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-      serviceAccountName: {{ include "kpi-service.serviceAccountName" . }}
+      serviceAccountName: {{ include "datalake-service.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       containers:

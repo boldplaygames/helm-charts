@@ -3,7 +3,7 @@ isAWS: true
 replicaCount: 1
 
 image:
-  repository: 082675554211.dkr.ecr.ap-northeast-2.amazonaws.com/kpi-service
+  repository: 082675554211.dkr.ecr.ap-northeast-2.amazonaws.com/datalake-service
   pullPolicy: IfNotPresent
   tag: "v0.2.0"
 
