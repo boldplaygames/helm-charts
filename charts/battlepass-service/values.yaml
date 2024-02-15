@@ -1,0 +1,28 @@
+isAWS: false
+
+replicaCount: 1
+
+image:
+  repository: 172.21.101.91:32000/battlepass-service
+  pullPolicy: IfNotPresent
+  tag: "latest"
+
+config:            
+  logLevel: "dev"   # dev, stage, prod
+
+serviceAccount:
+  name: ""
+
+podAnnotations:
+  sidecar.istio.io/inject: "false"
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 128Mi
+  limits:
+    cpu: 300m
+    memory: 512Mi
+
+autoscaling:
+  enabled: false
