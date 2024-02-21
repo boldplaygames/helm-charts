@@ -94,6 +94,16 @@ entries:
     version: 0.1.0
   battlepass-service:
   - apiVersion: v2
+    appVersion: 0.1.1
+    created: "2024-02-21T06:02:51.163227977Z"
+    description: A Helm chart for Kubernetes
+    digest: f588b11a2b4ba8d54d6d1efe1b15dac6a0c516e9c27909580f2939ea4fc96bfa
+    name: battlepass-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/battlepass-service-0.1.1/battlepass-service-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
     appVersion: 0.1.0
     created: "2024-02-15T01:32:49.671899712Z"
     description: A Helm chart for Kubernetes
@@ -505,4 +515,4 @@ entries:
     urls:
     - https://github.com/boldplaygames/helm-charts/releases/download/user-service-0.1.0/user-service-0.1.0.tgz
     version: 0.1.0
-generated: "2024-02-15T01:34:04.106683045Z"
+generated: "2024-02-21T06:02:51.163323946Z"
