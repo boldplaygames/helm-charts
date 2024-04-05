@@ -147,6 +147,16 @@ entries:
   datalake-service:
   - apiVersion: v2
     appVersion: 0.2.1
+    created: "2024-04-05T01:04:27.986025099Z"
+    description: A Helm chart for Kubernetes
+    digest: 50f436cd9f2a9266051128e208ff3c9aec4fac7370ac7fedc9ac00d75445bf35
+    name: datalake-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/datalake-service-0.2.3/datalake-service-0.2.3.tgz
+    version: 0.2.3
+  - apiVersion: v2
+    appVersion: 0.2.1
     created: "2024-01-09T06:11:30.059762624Z"
     description: A Helm chart for Kubernetes
     digest: 591ff58c159268ad4b75f89ae5c9b310ad4806d83c953f9fc5a937d27abc70fb
@@ -227,6 +237,17 @@ entries:
     urls:
     - https://github.com/boldplaygames/helm-charts/releases/download/game-service-0.1.0/game-service-0.1.0.tgz
     version: 0.1.0
+  gyun-service:
+  - apiVersion: v2
+    appVersion: 0.0.0
+    created: "2024-04-05T01:04:28.085624818Z"
+    description: A Helm chart for Kubernetes
+    digest: 93393c8aee1459d9c55c81d8c71587f9a84d028b65ab720c1ce2ad675eed1f7c
+    name: gyun-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/gyun-service-0.0.0/gyun-service-0.0.0.tgz
+    version: 0.0.0
   kpi-service:
   - apiVersion: v2
     appVersion: 0.2.0
@@ -515,4 +536,4 @@ entries:
     urls:
     - https://github.com/boldplaygames/helm-charts/releases/download/user-service-0.1.0/user-service-0.1.0.tgz
     version: 0.1.0
-generated: "2024-02-21T06:02:51.163323946Z"
+generated: "2024-04-05T01:04:28.085757616Z"
