@@ -147,6 +147,16 @@ entries:
   datalake-service:
   - apiVersion: v2
     appVersion: 0.2.1
+    created: "2024-04-05T09:05:14.223234427Z"
+    description: A Helm chart for Kubernetes
+    digest: e488ffde619832c1ddea4705f2435decd21449080234388beaccec8ed19a3c7f
+    name: datalake-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/datalake-service-0.2.4/datalake-service-0.2.4.tgz
+    version: 0.2.4
+  - apiVersion: v2
+    appVersion: 0.2.1
     created: "2024-04-05T01:04:27.986025099Z"
     description: A Helm chart for Kubernetes
     digest: 50f436cd9f2a9266051128e208ff3c9aec4fac7370ac7fedc9ac00d75445bf35
@@ -536,4 +546,4 @@ entries:
     urls:
     - https://github.com/boldplaygames/helm-charts/releases/download/user-service-0.1.0/user-service-0.1.0.tgz
     version: 0.1.0
-generated: "2024-04-05T01:04:28.085757616Z"
+generated: "2024-04-05T09:05:14.223340295Z"
