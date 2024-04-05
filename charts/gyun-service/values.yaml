@@ -3,7 +3,7 @@ isAWS: false
 replicaCount: 1
 
 image:
-  repository: 172.21.101.91:32000/datalake-service
+  repository: 172.21.101.91:32000/gyun-service
   pullPolicy: IfNotPresent
   tag: "latest"
 

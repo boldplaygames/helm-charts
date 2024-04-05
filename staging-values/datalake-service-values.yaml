@@ -7,13 +7,6 @@ image:
   pullPolicy: IfNotPresent
   tag: "v0.2.0"
 
-service:
-  type: ClusterIP
-  port: 8189
-  targetPort: 8009
-
-containerPort: 8009
-
 config:            
   utcL: 9 # UTC+9, UTC-9 -> -9  
   logLevel: "stage"   # dev, stage, prod
