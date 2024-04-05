@@ -37,6 +37,7 @@ spec:
             - name: http
               containerPort: {{ .Values.containerPort }}
               protocol: TCP
+# 살아있는지 주기적으로 체크
 #          livenessProbe:
 #            httpGet:
 #              path: /
