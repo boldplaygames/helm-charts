@@ -33,6 +33,16 @@ entries:
     version: 0.1.0
   backoffice-service:
   - apiVersion: v2
+    appVersion: 0.2.3
+    created: "2024-04-25T08:33:42.911726163Z"
+    description: A Helm chart for Kubernetes
+    digest: 26083e426dd844caeefed4f97bc034ca28175ebf8a69505f6db9eea324241c85
+    name: backoffice-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/backoffice-service-0.2.4/backoffice-service-0.2.4.tgz
+    version: 0.2.4
+  - apiVersion: v2
     appVersion: 0.2.2
     created: "2024-04-25T05:11:31.024953882Z"
     description: A Helm chart for Kubernetes
@@ -556,4 +566,4 @@ entries:
     urls:
     - https://github.com/boldplaygames/helm-charts/releases/download/user-service-0.1.0/user-service-0.1.0.tgz
     version: 0.1.0
-generated: "2024-04-25T05:11:31.025059058Z"
+generated: "2024-04-25T08:33:42.911881513Z"
