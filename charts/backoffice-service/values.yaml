@@ -18,11 +18,6 @@ config:
   jwtTimeout: 30    # Minute
   logLevel: "dev"   # dev, stage, prod
 
-pvc:
-  name: "json-data"
-  mountPath: "/mnt/data/json"
-  claimName: "pvc-svc-json"
-
 serviceAccount:
   name: ""
 

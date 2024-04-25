@@ -5,6 +5,5 @@ metadata:
   namespace: {{ .Release.Namespace }}
   creationTimestamp: 2023-10-15T17:40:00Z  #2023-11-17T17:40:00Z
 data:
-  JWT_TIMEOUT: {{ .Values.config.jwtTimeout | quote }}
-  MOUNT_PATH: {{ .Values.pvc.mountPath | quote }}   
+  JWT_TIMEOUT: {{ .Values.config.jwtTimeout | quote }}   
   LOG_LEVEL: {{ .Values.config.logLevel | quote }}
