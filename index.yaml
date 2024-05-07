@@ -339,6 +339,17 @@ entries:
     urls:
     - https://github.com/boldplaygames/helm-charts/releases/download/kpi-service-0.1.0/kpi-service-0.1.0.tgz
     version: 0.1.0
+  mail-service:
+  - apiVersion: v2
+    appVersion: 0.0.0
+    created: "2024-05-07T04:41:02.065150237Z"
+    description: A Helm chart for Kubernetes
+    digest: 9777d2cad4d5a0b48162c035ad33d00f5067d430e2989ab5eab17cbec6ad7ee9
+    name: mail-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/mail-service-0.0.0/mail-service-0.0.0.tgz
+    version: 0.0.0
   match-service:
   - apiVersion: v2
     appVersion: 0.2.0
@@ -566,4 +577,4 @@ entries:
     urls:
     - https://github.com/boldplaygames/helm-charts/releases/download/user-service-0.1.0/user-service-0.1.0.tgz
     version: 0.1.0
-generated: "2024-04-25T08:33:42.911881513Z"
+generated: "2024-05-07T04:41:02.065260222Z"
