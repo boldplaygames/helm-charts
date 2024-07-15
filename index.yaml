@@ -3,6 +3,16 @@ entries:
   api-service:
   - apiVersion: v2
     appVersion: 0.2.1
+    created: "2024-07-15T04:28:02.583120191Z"
+    description: A Helm chart for Kubernetes
+    digest: 33f704ae41e7b22dd0c9c1bd9da5f2b9ddb6df4140dd123c34f531b10be59628
+    name: api-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/api-service-0.2.6/api-service-0.2.6.tgz
+    version: 0.2.6
+  - apiVersion: v2
+    appVersion: 0.2.1
     created: "2024-07-15T02:09:31.686840703Z"
     description: A Helm chart for Kubernetes
     digest: 6f9d61bec2c3f6a1c4cf17407c14a405cd96a85749bdc8ac393aa5c98e9fe948
@@ -617,4 +627,4 @@ entries:
     urls:
     - https://github.com/boldplaygames/helm-charts/releases/download/user-service-0.1.0/user-service-0.1.0.tgz
     version: 0.1.0
-generated: "2024-07-15T02:09:31.686948384Z"
+generated: "2024-07-15T04:28:02.583243542Z"
