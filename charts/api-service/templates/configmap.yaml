@@ -7,4 +7,3 @@ metadata:
 data:
   JWT_TIMEOUT: {{ .Values.config.jwtTimeout | quote }}
   LOG_LEVEL: {{ .Values.config.logLevel | quote }}
-  OTEL_EXPORTER_OTLP_TRACES_ENDPOINT: {{ .Values.config.traceEndpoint | quote}}

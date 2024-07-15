@@ -34,7 +34,7 @@ spec:
       #     imagePullPolicy: IfNotPresent
       #     env:
       #       - name: OTEL_GO_AUTO_TARGET_EXE
-      #         value: /usr/local/go/bin
+      #         value: /build/cmd
       #       - name: OTEL_EXPORTER_OTLP_ENDPOINT
       #         value: "http://otel-collector-collector.trace.svc.cluster.local:4318/v1/traces"
       #       - name: OTEL_SERVICE_NAME
