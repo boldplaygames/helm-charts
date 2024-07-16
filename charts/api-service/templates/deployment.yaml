@@ -27,21 +27,21 @@ spec:
       serviceAccountName: {{ include "api-service.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
-      # shareProcessNamespace: true  #
+      shareProcessNamespace: true  #
       containers:
-      #   - name: autoinstrumentation-go
-      #     image: otel/autoinstrumentation-go    
-      #     imagePullPolicy: IfNotPresent
-      #     env:
-      #       - name: OTEL_GO_AUTO_TARGET_EXE
-      #         value: /build/cmd
-      #       - name: OTEL_EXPORTER_OTLP_ENDPOINT
-      #         value: "http://otel-collector-collector.trace.svc.cluster.local:4318/v1/traces"
-      #       - name: OTEL_SERVICE_NAME
-      #         value: {{ .Release.Name }}
-      #     securityContext:
-      #       runAsUser: 0
-      #       privileged: true  #
+        - name: autoinstrumentation-go
+          image: otel/autoinstrumentation-go    
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: OTEL_GO_AUTO_TARGET_EXE
+              value: /build/cmd
+            - name: OTEL_EXPORTER_OTLP_ENDPOINT
+              value: "http://otel-collector-collector.trace.svc.cluster.local:4318/v1/traces"
+            - name: OTEL_SERVICE_NAME
+              value: {{ .Release.Name }}
+          securityContext:
+            runAsUser: 0
+            privileged: true  #
         - name: {{ .Chart.Name }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
