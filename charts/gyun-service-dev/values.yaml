@@ -27,7 +27,6 @@ resources:
 autoscaling:
   enabled: false
 
-podSecurityContext: 
+securityContext: 
   allowPrivilegeEscalation: true
   
-commend: ["bash", "-c", "ulimit -c unlimited"]
