@@ -30,4 +30,6 @@ autoscaling:
 securityContext: 
   allowPrivilegeEscalation: true
   privileged: true
-  
+  capabilities:
+        add:
+          - SYS_PTRACE
