@@ -27,8 +27,6 @@ resources:
 autoscaling:
   enabled: false
 
-enableCoreDump: true
-
 securityContext: 
   allowPrivilegeEscalation: true
   privileged: true
