@@ -40,7 +40,7 @@ spec:
               name: bs-common-secret
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
-          commend: ["/bin/bash"]
+          command: ["/bin/bash"]
           args: ["-c", "ulimit -c unlimited"]  
           volumeMounts:
           - name: coredump
