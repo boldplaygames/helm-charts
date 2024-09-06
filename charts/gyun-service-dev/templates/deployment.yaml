@@ -40,8 +40,8 @@ spec:
               name: bs-common-secret
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
-          commend: 
-            {{ .Values.commend }}  
+          commend: ["/bin/bash"]
+          args: ["-c", "ulimit -c unlimited"]  
           volumeMounts:
           - name: coredump
             mountPath: /var/crash              
