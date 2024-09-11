@@ -26,3 +26,8 @@ resources:
 
 autoscaling:
   enabled: false
+
+securityContext:
+  sysctls:
+  - name: core
+    value: "-1"
