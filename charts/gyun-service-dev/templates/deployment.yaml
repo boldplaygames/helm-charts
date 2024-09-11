@@ -48,7 +48,7 @@ spec:
           volumeMounts:
           - name: coredump
             mountPath: /var/crash
-
+      terminationGracePeriodSeconds: 20
       volumes:
       - name: coredump
         hostPath:
