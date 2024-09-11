@@ -37,6 +37,6 @@ podSecurityContext:
     - name: kernel.core_pattern
       value: "/var/crash/coredump_%e_%t"
     - name: kernel.core_pipe_limit
-      value: "-1"
+      value: "0"
     - name: fs.suid_dumpable
       value: "2"
