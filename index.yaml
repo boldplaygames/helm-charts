@@ -390,6 +390,16 @@ entries:
   gyun-service:
   - apiVersion: v2
     appVersion: 0.0.0
+    created: "2024-09-11T02:59:01.370204259Z"
+    description: A Helm chart for Kubernetes
+    digest: fd50e51557e1f1f2fd47d2dcbf4846380d1bcd614f7fca07b38504dfaa11d8bd
+    name: gyun-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/gyun-service-1.0.0/gyun-service-1.0.0.tgz
+    version: 1.0.0
+  - apiVersion: v2
+    appVersion: 0.0.0
     created: "2024-04-05T01:04:28.085624818Z"
     description: A Helm chart for Kubernetes
     digest: 93393c8aee1459d9c55c81d8c71587f9a84d028b65ab720c1ce2ad675eed1f7c
@@ -697,4 +707,4 @@ entries:
     urls:
     - https://github.com/boldplaygames/helm-charts/releases/download/user-service-0.1.0/user-service-0.1.0.tgz
     version: 0.1.0
-generated: "2024-07-16T03:22:04.612671457Z"
+generated: "2024-09-11T02:59:01.370318774Z"
