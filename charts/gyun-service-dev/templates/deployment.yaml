@@ -34,7 +34,7 @@ spec:
             privileged: true
             capabilities:
               add:
-              - SYS_PTRACE
+              - SYS_RESOURCE
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           envFrom:

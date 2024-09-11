@@ -31,3 +31,12 @@ securityContext:
   sysctls:
   - name: core
     value: "-1"
+
+podSecurityContext:
+  sysctls:
+    - name: kernel.core_pattern
+      value: "/var/crash/coredump_%e_%t"
+    - name: kernel.core_pipe_limit
+      value: "-1"
+    - name: fs.suid_dumpable
+      value: "2"
