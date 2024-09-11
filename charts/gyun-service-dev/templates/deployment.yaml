@@ -47,7 +47,10 @@ spec:
           # command: ["/bin/bash", "-c", "ulimit -c unlimited"]
           volumeMounts:
           - name: coredump
-            mountPath: /var/crash              
+            mountPath: /var/crash
+          command: ["/bin/bash"]
+          args: ["-c", "ulimit -c unlimited"]
+
       volumes:
       - name: coredump
         hostPath:
