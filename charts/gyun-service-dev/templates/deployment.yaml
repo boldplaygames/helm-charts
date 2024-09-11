@@ -48,8 +48,6 @@ spec:
           volumeMounts:
           - name: coredump
             mountPath: /var/crash
-          command: ["/bin/bash"]
-          args: ["-c", "ulimit -c unlimited"]
 
       volumes:
       - name: coredump
