@@ -48,11 +48,11 @@ spec:
           volumeMounts:
           - name: coredump
             mountPath: /var/crash
-          lifecycle:
-            preStop:
-              exec:
-                command: ["/bin/bash", "-c", "sleep 20"]  
-      terminationGracePeriodSeconds: 20
+      #     lifecycle:
+      #       preStop:
+      #         exec:
+      #           command: ["/bin/bash", "-c", "sleep 10"]  
+      # terminationGracePeriodSeconds: 30
       volumes:
       - name: coredump
         hostPath:
@@ -70,9 +70,9 @@ spec:
       tolerations:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-        initContainers:
-        - name: set-unlimited-core
-          image: busybox
-          command: ["bash", "-c", "ulimit -c unlimited"]
-          securityContext:
-            privileged: true
+        # initContainers:
+        # - name: set-unlimited-core
+        #   image: busybox
+        #   command: ["bash", "-c", "ulimit -c unlimited"]
+        #   securityContext:
+        #     privileged: true
