@@ -48,6 +48,10 @@ spec:
           volumeMounts:
           - name: coredump
             mountPath: /var/crash
+          lifecycle:
+            preStop:
+              exec:
+                command: ["/bin/bash", "-c", "sleep 20"]  
       terminationGracePeriodSeconds: 20
       volumes:
       - name: coredump
