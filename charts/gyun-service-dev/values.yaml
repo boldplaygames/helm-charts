@@ -23,6 +23,7 @@ resources:
   limits:
     cpu: 300m
     memory: 512Mi
+    core: "infinity"
 
 autoscaling:
   enabled: false
