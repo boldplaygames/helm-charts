@@ -35,6 +35,7 @@ spec:
             capabilities:
               add:
               - SYS_RESOURCE
+              - SYS_PTRACE
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           envFrom:
@@ -51,7 +52,7 @@ spec:
           lifecycle:
             preStop:
               exec:
-                command: ["/bin/bash", "-c", "sleep 10"]  
+                command: ["/bin/bash", "-c", "sleep 20"]  
       terminationGracePeriodSeconds: 30
       volumes:
       - name: coredump
