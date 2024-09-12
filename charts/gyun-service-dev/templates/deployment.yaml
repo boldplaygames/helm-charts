@@ -70,9 +70,3 @@ spec:
       tolerations:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-      initContainers:
-      - name: set-unlimited-core
-        image: busybox
-        command: ["sh", "-c", "ulimit -c unlimited"]
-        securityContext:
-          privileged: true
