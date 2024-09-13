@@ -42,19 +42,8 @@ spec:
             {{- toYaml .Values.resources | nindent 12 }}
           volumeMounts:
             {{- toYaml .Values.volumeMounts | nindent 12 }}
-          # - name: coredump
-          #   mountPath: /var/crash
-      #     lifecycle:
-      #       preStop:
-      #         exec:
-      #           command: ["/bin/bash", "-c", "sleep 20"]  
-      # terminationGracePeriodSeconds: 30
       volumes:
       {{- toYaml .Values.volume | nindent 8 }}
-      # - name: coredump
-      #   hostPath:
-      #     path: /var/coredump
-      #     type: Directory
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
