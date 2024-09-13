@@ -30,12 +30,7 @@ spec:
       containers:
         - name: {{ .Chart.Name }}
           securityContext:
-            # allowPrivilegeEscalation: true
-            privileged: true
-            # capabilities:
-            #   add:
-            #   - SYS_RESOURCE
-            #   - SYS_PTRACE
+            {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           envFrom:
@@ -46,18 +41,20 @@ spec:
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           volumeMounts:
-          - name: coredump
-            mountPath: /var/crash
-          lifecycle:
-            preStop:
-              exec:
-                command: ["/bin/bash", "-c", "sleep 20"]  
-      terminationGracePeriodSeconds: 30
+            {{- toYaml .Values.volumeMounts | nindent 12 }}
+          # - name: coredump
+          #   mountPath: /var/crash
+      #     lifecycle:
+      #       preStop:
+      #         exec:
+      #           command: ["/bin/bash", "-c", "sleep 20"]  
+      # terminationGracePeriodSeconds: 30
       volumes:
-      - name: coredump
-        hostPath:
-          path: /var/coredump
-          type: Directory
+      {{- toYaml .Values.volume | nindent 8 }}
+      # - name: coredump
+      #   hostPath:
+      #     path: /var/coredump
+      #     type: Directory
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}

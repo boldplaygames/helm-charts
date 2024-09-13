@@ -28,6 +28,14 @@ autoscaling:
   enabled: false
 
 securityContext:
-  sysctls:
-  - name: core
-    value: "-1"
+  privileged: true
+
+volumeMounts:
+  name: coredump
+  mountPath: /var/crash
+
+volume:
+  name: coredump
+  hostPath:
+    path: /var/coredump
+    type: Directory  
