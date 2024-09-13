@@ -30,12 +30,12 @@ spec:
       containers:
         - name: {{ .Chart.Name }}
           securityContext:
-            allowPrivilegeEscalation: true
+            # allowPrivilegeEscalation: true
             privileged: true
-            capabilities:
-              add:
-              - SYS_RESOURCE
-              - SYS_PTRACE
+            # capabilities:
+            #   add:
+            #   - SYS_RESOURCE
+            #   - SYS_PTRACE
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           envFrom:
@@ -45,7 +45,6 @@ spec:
               name: bs-common-secret
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
-          # command: ["/bin/bash", "-c", "ulimit -c unlimited"]
           volumeMounts:
           - name: coredump
             mountPath: /var/crash
