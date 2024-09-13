@@ -31,11 +31,11 @@ securityContext:
   privileged: true
 
 volumeMounts:
-  name: coredump
-  mountPath: /var/crash
+  - name: coredump
+    mountPath: /var/crash
 
 volume:
-  name: coredump
-  hostPath:
-    path: /var/coredump
-    type: Directory  
+  - name: coredump
+    hostPath:
+      path: /var/coredump
+      type: Directory  
