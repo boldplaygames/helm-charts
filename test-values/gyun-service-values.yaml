@@ -30,12 +30,12 @@ autoscaling:
 # securityContext:
 #   privileged: true
 
-volumeMounts:
-  - name: coredump
-    mountPath: /var/crash
+# volumeMounts:
+#   - name: coredump
+#     mountPath: /var/crash
 
-volume:
-  - name: coredump
-    hostPath:
-      path: /var/coredump
-      type: Directory  
+# volume:
+#   - name: coredump
+#     hostPath:
+#       path: /var/coredump
+#       type: Directory  
