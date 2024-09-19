@@ -24,11 +24,11 @@ resources:
     cpu: 300m
     memory: 512Mi
 
-# autoscaling:
-#   enabled: false
+autoscaling:
+  enabled: false
 
-securityContext:
-  privileged: true
+# securityContext:
+#   privileged: true
 
 volumeMounts:
   - name: coredump
