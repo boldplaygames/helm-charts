@@ -38,27 +38,6 @@ spec:
             - name: http
               containerPort: {{ .Values.containerPort }}
               protocol: TCP
-      #   - name: autoinstrumentation-go
-      #     image: otel/autoinstrumentation-go    
-      #     imagePullPolicy: IfNotPresent
-      #     env:
-      #       - name: OTEL_GO_AUTO_TARGET_EXE
-      #         value: /build/cmd
-      #       - name: OTEL_EXPORTER_OTLP_ENDPOINT
-      #         value: "http://otel-collector-collector.trace.svc.cluster.local:4318/v1/traces"
-      #       - name: OTEL_SERVICE_NAME
-      #         value: {{ .Release.Name }}
-      #     securityContext:
-      #       runAsUser: 0
-      #       privileged: true  #
-#          livenessProbe:
-#            httpGet:
-#              path: /
-#              port: http
-#          readinessProbe:
-#            httpGet:
-#              path: /
-#              port: http
           envFrom:
           - configMapRef:
               name: {{ .Release.Name }}-configmap
