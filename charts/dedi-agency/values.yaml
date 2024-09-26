@@ -31,6 +31,6 @@ autoscaling:
   enabled: false
 
 service:
-  type: nodeport
+  type: NodePort
   port: 8222
   targetport: 8222
