@@ -8,9 +8,9 @@ image:
   tag: "latest"
 
 config:            
-  REGION: DEV
-  RUNENV: DEV
-  NATS: 172.21.101.201:4222
+  REGION: "DEV"
+  RUNENV: "DEV"
+  NATS: "172.21.101.201:4222"
   logLevel: "dev"   # dev, stage, prod
 
 serviceAccount:
@@ -29,3 +29,8 @@ resources:
 
 autoscaling:
   enabled: false
+
+service:
+  type: nodeport
+  port: 8222
+  targetport: 8222
