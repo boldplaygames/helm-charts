@@ -3,7 +3,7 @@ isAWS: false
 replicaCount: 1
 
 image:
-  repository: 172.21.101.210:32000/dedi-agency
+  repository: 172.21.101.61:32000/dedi-agency
   pullPolicy: IfNotPresent
   tag: "latest"
 
