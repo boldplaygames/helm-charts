@@ -47,7 +47,7 @@ spec:
             {{- toYaml .Values.resources | nindent 12 }}
           volumeMounts:
             {{- toYaml .Values.volumeMounts | nindent 12 }}
-      terminationGracePeriodSeconds: 120
+      terminationGracePeriodSeconds: 150
       volumes:
       {{- toYaml .Values.volume | nindent 8 }}  
       {{- with .Values.nodeSelector }}
