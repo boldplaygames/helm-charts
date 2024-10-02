@@ -1,7 +1,6 @@
 isAWS: false
 
 replicaCount: 1
-terminationSeconds: 120
 
 image:
   repository: 172.21.101.91:32000/mail-service
