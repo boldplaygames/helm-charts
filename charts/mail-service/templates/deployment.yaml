@@ -24,7 +24,6 @@ spec:
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-      terminationGracePeriodSeconds: 120
       serviceAccountName: {{ include "mail-service.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
@@ -43,6 +42,7 @@ spec:
             {{- toYaml .Values.resources | nindent 12 }}
           volumeMounts:
             {{- toYaml .Values.volumeMounts | nindent 12 }}
+      terminationGracePeriodSeconds: {{ .Values.terminationSeconds }}
       volumes:
       {{- toYaml .Values.volume | nindent 8 }}  
       {{- with .Values.nodeSelector }}
