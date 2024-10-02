@@ -27,10 +27,6 @@ spec:
       serviceAccountName: {{ include "mail-service.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
-      lifecycle:
-        preStop:
-          exec:
-            terminationGracePeriodSeconds: 120
       containers:
         - name: {{ .Chart.Name }}
           securityContext:
@@ -46,6 +42,7 @@ spec:
             {{- toYaml .Values.resources | nindent 12 }}
           volumeMounts:
             {{- toYaml .Values.volumeMounts | nindent 12 }}
+      terminationGracePeriodSeconds: 60
       volumes:
       {{- toYaml .Values.volume | nindent 8 }}  
       {{- with .Values.nodeSelector }}
