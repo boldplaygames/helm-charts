@@ -5,7 +5,7 @@ replicaCount: 1
 image:
   repository: 172.21.101.61:32000/dedi-agency
   pullPolicy: IfNotPresent
-  tag: ""
+  tag: "latest"
 
 config:            
   REGION: "DEV"
