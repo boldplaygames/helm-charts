@@ -358,6 +358,16 @@ entries:
   dedi-agency:
   - apiVersion: v2
     appVersion: 0.0.1
+    created: "2024-10-23T07:58:32.848976945Z"
+    description: A Helm chart for Kubernetes
+    digest: 4c26f789ef2b867cc56b1ce0b76b5f984a808942b00d5ce944378d0242163ef3
+    name: dedi-agency
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/dedi-agency-0.0.7/dedi-agency-0.0.7.tgz
+    version: 0.0.7
+  - apiVersion: v2
+    appVersion: 0.0.1
     created: "2024-10-23T07:53:25.990943919Z"
     description: A Helm chart for Kubernetes
     digest: 1ddc3f9a2f95a59c70d1ef736f6d6bf2d1b04b118ef0ba255db800fe1376df6b
@@ -809,4 +819,4 @@ entries:
     urls:
     - https://github.com/boldplaygames/helm-charts/releases/download/user-service-0.1.0/user-service-0.1.0.tgz
     version: 0.1.0
-generated: "2024-10-23T07:53:25.991460366Z"
+generated: "2024-10-23T07:58:32.849124351Z"
