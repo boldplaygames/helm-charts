@@ -15,9 +15,9 @@ service:
 containerPort: 8222
 
 config:            
-  REGION: "DEV"
-  RUNENV: "DEV"
-  NATS: "172.21.101.201:4222"
+  # REGION: "DEV"
+  # RUNENV: "DEV"
+  # NATS: "172.21.101.201:4222"
   logLevel: "dev"   # dev, stage, prod
 
 serviceAccount:
