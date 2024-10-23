@@ -355,6 +355,17 @@ entries:
     urls:
     - https://github.com/boldplaygames/helm-charts/releases/download/datalake-service-0.2.0/datalake-service-0.2.0.tgz
     version: 0.2.0
+  dedi-agency-service:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2024-10-23T06:26:05.419937888Z"
+    description: A Helm chart for Kubernetes
+    digest: 883bda1787fa819705ca4d909091f87b636338aa37979cbaaa94185886889fd0
+    name: dedi-agency-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/dedi-agency-service-0.0.4/dedi-agency-service-0.0.4.tgz
+    version: 0.0.4
   dedi-service:
   - apiVersion: v2
     appVersion: 0.1.0
@@ -767,4 +778,4 @@ entries:
     urls:
     - https://github.com/boldplaygames/helm-charts/releases/download/user-service-0.1.0/user-service-0.1.0.tgz
     version: 0.1.0
-generated: "2024-10-23T06:00:45.173526883Z"
+generated: "2024-10-23T06:26:05.420077448Z"
