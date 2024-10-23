@@ -7,6 +7,13 @@ image:
   pullPolicy: IfNotPresent
   tag: "latest"
 
+service:
+  type: ClusterIP
+  port: 8002
+  targetPort: 8222
+
+containerPort: 8222
+
 config:            
   REGION: "DEV"
   RUNENV: "DEV"
