@@ -7,7 +7,7 @@ spec:
   type: {{ .Values.service.type }}
   ports:
     - port: {{ .Values.service.port }}
-      targetPort: {{ .Values.service.targetport }}
+      targetPort: {{ .Values.service.targetPort }}
       protocol: TCP
   selector:
     {{- include "dedi-agency.labels" . | nindent 4 }}    
