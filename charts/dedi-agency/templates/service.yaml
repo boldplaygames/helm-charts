@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: {{ include "dedi-agency.fullname" . }}
   labels: {{- include "dedi-agency.labels" . | nindent 4 }}
+  namespace: {{ .Values.namespace }} 
 spec:
   type: {{ .Values.service.type }}
   ports:
