@@ -4,7 +4,6 @@ metadata:
   name: {{ include "dedi-agency.fullname" . }}
   labels:
     {{- include "dedi-agency.labels" . | nindent 4 }}
-  namespace: {{ .Values.namespace }}  
 spec:
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
