@@ -26,16 +26,3 @@ resources:
 
 autoscaling:
   enabled: false
-
-securityContext:
-  privileged: true
-
-volumeMounts:
-  - name: coredump
-    mountPath: /var/crash
-
-volume:
-  - name: coredump
-    hostPath:
-      path: /var/coredump
-      type: Directory  
