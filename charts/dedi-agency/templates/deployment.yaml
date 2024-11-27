@@ -46,10 +46,6 @@ spec:
               containerPort: {{ .Values.containerPort }}
               protocol: TCP
           envFrom:
-          # {{- with .Values.config }}
-          # - configMapRef:
-          #     name: {{ .Release.Name }}-configmap
-          # {{- end }}    
           - secretRef:
               name: dedi-secret
           resources:
