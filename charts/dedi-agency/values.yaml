@@ -14,8 +14,6 @@ service:
 
 containerPort: 8222
 
-config:            
-  logLevel: "dev"   # dev, stage, prod
 
 serviceAccount:
   name: ""

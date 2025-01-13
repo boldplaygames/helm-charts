@@ -7,8 +7,6 @@ image:
   pullPolicy: IfNotPresent
   tag: "latest"
 
-config:            
-  logLevel: "dev"   # dev, stage, prod
 
 serviceAccount:
   name: ""

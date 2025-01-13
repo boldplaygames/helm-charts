@@ -11,7 +11,6 @@ config:
   maxRoom: 100
   maxPlayer: 200
   defaultChanSize: 1000
-  logLevel: "dev"   # dev, stage, prod
 
 serviceAccount:
   name: ""

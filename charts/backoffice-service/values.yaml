@@ -16,7 +16,6 @@ containerPort: 8401
 
 config:            
   jwtTimeout: 30    # Minute
-  logLevel: "dev"   # dev, stage, prod
 
 serviceAccount:
   name: ""
