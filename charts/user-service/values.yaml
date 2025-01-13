@@ -8,10 +8,10 @@ image:
   tag: "latest"
 
 
-pvc:
-  name: "json-data"
-  mountPath: "/mnt/data/json"
-  claimName: "pvc-svc-json"
+# pvc:
+#   name: "json-data"
+#   mountPath: "/mnt/data/json"
+#   claimName: "pvc-svc-json"
 
 serviceAccount:
   name: ""
