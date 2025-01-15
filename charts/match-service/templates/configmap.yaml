@@ -8,4 +8,3 @@ data:
   MAX_ROOM:  {{ .Values.config.maxRoom | quote }}
   MAX_PLAYER:  {{ .Values.config.maxPlayer | quote }}
   DEFAULT_CHAN_SIZE:  {{ .Values.config.defaultChanSize | quote }}
-  LOG_LEVEL: {{ .Values.config.logLevel | quote }}
