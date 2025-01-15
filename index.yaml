@@ -875,6 +875,16 @@ entries:
   match-service:
   - apiVersion: v2
     appVersion: 0.2.0
+    created: "2025-01-15T00:37:24.309965523Z"
+    description: A Helm chart for Kubernetes
+    digest: eec04ac8fd193dc3a38602fe714ee1cc7a7878002813718476a931d90ef1c286
+    name: match-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/match-service-0.2.2/match-service-0.2.2.tgz
+    version: 0.2.2
+  - apiVersion: v2
+    appVersion: 0.2.0
     created: "2025-01-13T03:03:17.93991726Z"
     description: A Helm chart for Kubernetes
     digest: c5310e40454025475b2553736b3137dc17b54c7e816552bd1b5a00f70fcff139
@@ -1159,4 +1169,4 @@ entries:
     urls:
     - https://github.com/boldplaygames/helm-charts/releases/download/user-service-0.1.0/user-service-0.1.0.tgz
     version: 0.1.0
-generated: "2025-01-14T01:24:11.440405302Z"
+generated: "2025-01-15T00:37:24.310284148Z"
