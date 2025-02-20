@@ -3,6 +3,16 @@ entries:
   api-service:
   - apiVersion: v2
     appVersion: 0.2.2
+    created: "2025-02-20T08:58:25.232693965Z"
+    description: A Helm chart for Kubernetes
+    digest: f6caef8519b73f92e7dbc86ee5316f4125265d1f50a8918829395ac61b654c3d
+    name: api-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/api-service-0.2.18/api-service-0.2.18.tgz
+    version: 0.2.18
+  - apiVersion: v2
+    appVersion: 0.2.2
     created: "2025-01-14T01:24:11.440080218Z"
     description: A Helm chart for Kubernetes
     digest: 00b3ef699a763766b77fbafd35dc0077295b202e1a52a89561d9c29e22e18ed7
@@ -184,6 +194,16 @@ entries:
   backoffice-service:
   - apiVersion: v2
     appVersion: 0.2.3
+    created: "2025-02-20T08:58:25.355428658Z"
+    description: A Helm chart for Kubernetes
+    digest: 28da28eac1cb69a360810e72be7071e714b21220fc59a0c6237becbad04e55ac
+    name: backoffice-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/backoffice-service-0.2.8/backoffice-service-0.2.8.tgz
+    version: 0.2.8
+  - apiVersion: v2
+    appVersion: 0.2.3
     created: "2025-01-13T03:03:16.937507602Z"
     description: A Helm chart for Kubernetes
     digest: e483d82ee5ff852244e57ecbbb3ce379686bf01c055c27a95df30de508cae6ce
@@ -295,6 +315,16 @@ entries:
   battlepass-service:
   - apiVersion: v2
     appVersion: 0.1.1
+    created: "2025-02-20T08:58:25.467775239Z"
+    description: A Helm chart for Kubernetes
+    digest: 3d71f1d6456dd61a4fb4c896eab434b9c640b8b4497e7a449b216cec3fec7163
+    name: battlepass-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/battlepass-service-0.2.3/battlepass-service-0.2.3.tgz
+    version: 0.2.3
+  - apiVersion: v2
+    appVersion: 0.1.1
     created: "2025-01-13T03:03:17.056421643Z"
     description: A Helm chart for Kubernetes
     digest: e3a60eb5d149dc1091cf6cca03eec87ea543c1732b4608ab9428e89252308ab3
@@ -375,6 +405,16 @@ entries:
     - https://github.com/boldplaygames/helm-charts/releases/download/craft-service-0.1.0/craft-service-0.1.0.tgz
     version: 0.1.0
   datalake-service:
+  - apiVersion: v2
+    appVersion: 0.2.1
+    created: "2025-02-20T08:58:25.583052033Z"
+    description: A Helm chart for Kubernetes
+    digest: 99cd32f19756ae4cd3d254b046858cf19e2aeba7e3f4375b055df30c29bb9918
+    name: datalake-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/datalake-service-0.2.9/datalake-service-0.2.9.tgz
+    version: 0.2.9
   - apiVersion: v2
     appVersion: 0.2.1
     created: "2025-01-13T03:03:17.193432871Z"
@@ -621,6 +661,16 @@ entries:
   game-service:
   - apiVersion: v2
     appVersion: 0.2.0
+    created: "2025-02-20T08:58:25.806830298Z"
+    description: A Helm chart for Kubernetes
+    digest: 19cdc0ebea20ad4679c73f537ba0da620dbbba164b8682898145f3590396d054
+    name: game-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/game-service-0.2.4/game-service-0.2.4.tgz
+    version: 0.2.4
+  - apiVersion: v2
+    appVersion: 0.2.0
     created: "2025-01-13T03:03:17.571504159Z"
     description: A Helm chart for Kubernetes
     digest: f583b0190083017db47e662fbfb3fd09cb7bb8358a83e0c5c7a9068f57906255
@@ -864,6 +914,16 @@ entries:
   mail-service:
   - apiVersion: v2
     appVersion: 0.0.6
+    created: "2025-02-20T08:58:25.909773329Z"
+    description: A Helm chart for Kubernetes
+    digest: a76f221fb94a58830d924d44402a6e33df6483324c3f8131fb4bf6b7810a9d60
+    name: mail-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/mail-service-0.2.3/mail-service-0.2.3.tgz
+    version: 0.2.3
+  - apiVersion: v2
+    appVersion: 0.0.6
     created: "2025-01-13T03:03:17.819376497Z"
     description: A Helm chart for Kubernetes
     digest: 4cafd2992c4f12b1547436dfe7e1209484af57942699b7b693268767c7102bc3
@@ -893,6 +953,16 @@ entries:
     - https://github.com/boldplaygames/helm-charts/releases/download/mail-service-0.0.0/mail-service-0.0.0.tgz
     version: 0.0.0
   match-service:
+  - apiVersion: v2
+    appVersion: 0.2.0
+    created: "2025-02-20T08:58:26.034778809Z"
+    description: A Helm chart for Kubernetes
+    digest: 65a1aebd4c090ec4c7bb08fac760292895357357fe5dcb48a16bfabd1f2314c6
+    name: match-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/match-service-0.2.4/match-service-0.2.4.tgz
+    version: 0.2.4
   - apiVersion: v2
     appVersion: 0.2.0
     created: "2025-02-03T08:41:16.346926135Z"
@@ -1018,6 +1088,16 @@ entries:
   shop-service:
   - apiVersion: v2
     appVersion: 0.1.0
+    created: "2025-02-20T08:58:26.160790663Z"
+    description: A Helm chart for Kubernetes
+    digest: 6c0f0aa101d56f53dcd76775bc2321f56550010f7b3c7d1de164a5194da9381a
+    name: shop-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/shop-service-0.2.4/shop-service-0.2.4.tgz
+    version: 0.2.4
+  - apiVersion: v2
+    appVersion: 0.1.0
     created: "2025-01-13T03:03:18.160212004Z"
     description: A Helm chart for Kubernetes
     digest: e554b485df2ad23be0224f88a8dcfe34308251cdc78127b67902983ba40ac312
@@ -1131,6 +1211,16 @@ entries:
   user-service:
   - apiVersion: v2
     appVersion: 0.2.2
+    created: "2025-02-20T08:58:26.265026739Z"
+    description: A Helm chart for Kubernetes
+    digest: 0fc86e053a178f76905d15b8c5670326ba1789c4dd8bbd1c031c3479d02c5f5b
+    name: user-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/user-service-0.2.7/user-service-0.2.7.tgz
+    version: 0.2.7
+  - apiVersion: v2
+    appVersion: 0.2.2
     created: "2025-01-13T06:44:50.433529663Z"
     description: A Helm chart for Kubernetes
     digest: 05f6399fad13d5ab9f1f0b2b737c7caf103bfa851910ab5b1847dd90eb613f04
@@ -1199,4 +1289,4 @@ entries:
     urls:
     - https://github.com/boldplaygames/helm-charts/releases/download/user-service-0.1.0/user-service-0.1.0.tgz
     version: 0.1.0
-generated: "2025-02-20T08:47:56.601342957Z"
+generated: "2025-02-20T08:58:26.265366294Z"
