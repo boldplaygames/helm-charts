@@ -35,7 +35,7 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           envFrom:
           - secretRef:
-              name: bs-common-secret
+              name: {{ .Values.secretName }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           volumeMounts:

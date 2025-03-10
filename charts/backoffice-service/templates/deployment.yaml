@@ -50,7 +50,7 @@ spec:
           - configMapRef:
               name: {{ .Release.Name }}-configmap
           - secretRef:
-              name: bs-common-secret
+              name: {{ .Values.secretName }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           volumeMounts:
