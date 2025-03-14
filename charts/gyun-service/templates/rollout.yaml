@@ -10,10 +10,7 @@ spec:
   replicas: {{ .Values.replicaCount }}
   {{- end }}
   strategy:
-    canary:
-      steps:
-        - setWeight: 50
-        - pause: {}
+    {{- toYaml .Values.strategy | nindent 4 }}
   selector:
     matchLabels:
       {{- include "gyun-service.selectorLabels" . | nindent 6 }}

@@ -1,17 +1,19 @@
-{{ if eq .Values.deploy "deployment" }}
-apiVersion: apps/v1
-kind: Deployment
+{{ if eq .Values.deploy "rollout" }}
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
 metadata:
-  name: {{ include "datalake-service.fullname" . }}
+  name: {{ include "user-service.fullname" . }}
   labels:
-    {{- include "datalake-service.labels" . | nindent 4 }}
+    {{- include "user-service.labels" . | nindent 4 }}
 spec:
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
   {{- end }}
+  strategy:
+    {{- toYaml .Values.strategy | nindent 4 }}
   selector:
     matchLabels:
-      {{- include "datalake-service.selectorLabels" . | nindent 6 }}
+      {{- include "user-service.selectorLabels" . | nindent 6 }}
   template:
     metadata:
       {{- with .Values.podAnnotations }}
@@ -19,13 +21,13 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       labels:
-        {{- include "datalake-service.selectorLabels" . | nindent 8 }}
+        {{- include "user-service.selectorLabels" . | nindent 8 }}
     spec:
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-      serviceAccountName: {{ include "datalake-service.serviceAccountName" . }}
+      serviceAccountName: {{ include "user-service.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       containers:

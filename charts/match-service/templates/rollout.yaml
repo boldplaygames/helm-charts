@@ -1,17 +1,19 @@
-{{ if eq .Values.deploy "deployment" }}
-apiVersion: apps/v1
-kind: Deployment
+{{ if eq .Values.deploy "rollout" }}
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
 metadata:
-  name: {{ include "datalake-service.fullname" . }}
+  name: {{ include "match-service.fullname" . }}
   labels:
-    {{- include "datalake-service.labels" . | nindent 4 }}
+    {{- include "match-service.labels" . | nindent 4 }}
 spec:
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
   {{- end }}
+  strategy:
+    {{- toYaml .Values.strategy | nindent 4 }}
   selector:
     matchLabels:
-      {{- include "datalake-service.selectorLabels" . | nindent 6 }}
+      {{- include "match-service.selectorLabels" . | nindent 6 }}
   template:
     metadata:
       {{- with .Values.podAnnotations }}
@@ -19,13 +21,13 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       labels:
-        {{- include "datalake-service.selectorLabels" . | nindent 8 }}
+        {{- include "match-service.selectorLabels" . | nindent 8 }}
     spec:
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-      serviceAccountName: {{ include "datalake-service.serviceAccountName" . }}
+      serviceAccountName: {{ include "match-service.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       containers:
@@ -35,6 +37,8 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           envFrom:
+          - configMapRef:
+              name: {{ .Release.Name }}-configmap
           - secretRef:
               name: {{ .Values.secretName }}
           resources:

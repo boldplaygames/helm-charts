@@ -1,17 +1,19 @@
-{{ if eq .Values.deploy "deployment" }}
-apiVersion: apps/v1
-kind: Deployment
+{{ if eq .Values.deploy "rollout" }}
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
 metadata:
-  name: {{ include "datalake-service.fullname" . }}
+  name: {{ include "backoffice-service.fullname" . }}
   labels:
-    {{- include "datalake-service.labels" . | nindent 4 }}
+    {{- include "backoffice-service.labels" . | nindent 4 }}
 spec:
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
   {{- end }}
+  strategy:
+    {{- toYaml .Values.strategy | nindent 4 }}
   selector:
     matchLabels:
-      {{- include "datalake-service.selectorLabels" . | nindent 6 }}
+      {{- include "backoffice-service.selectorLabels" . | nindent 6 }}
   template:
     metadata:
       {{- with .Values.podAnnotations }}
@@ -19,13 +21,13 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       labels:
-        {{- include "datalake-service.selectorLabels" . | nindent 8 }}
+        {{- include "backoffice-service.selectorLabels" . | nindent 8 }}
     spec:
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-      serviceAccountName: {{ include "datalake-service.serviceAccountName" . }}
+      serviceAccountName: {{ include "backoffice-service.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       containers:
@@ -34,7 +36,22 @@ spec:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - name: http
+              containerPort: {{ .Values.containerPort }}
+              protocol: TCP
+# 살아있는지 주기적으로 체크
+#          livenessProbe:
+#            httpGet:
+#              path: /
+#              port: http
+#          readinessProbe:
+#            httpGet:
+#              path: /
+#              port: http
           envFrom:
+          - configMapRef:
+              name: {{ .Release.Name }}-configmap
           - secretRef:
               name: {{ .Values.secretName }}
           resources:
@@ -42,7 +59,7 @@ spec:
           volumeMounts:
             {{- toYaml .Values.volumeMounts | nindent 12 }}
       volumes:
-      {{- toYaml .Values.volume | nindent 8 }}  
+      {{- toYaml .Values.volume | nindent 8 }}                   
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
