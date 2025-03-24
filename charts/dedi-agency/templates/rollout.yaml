@@ -1,6 +1,6 @@
-{{ if eq .Values.deploy "deployment" }}
-apiVersion: apps/v1
-kind: Deployment
+{{ if eq .Values.deploy "rollout" }}
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
 metadata:
   name: {{ include "dedi-agency.fullname" . }}
   labels:
@@ -9,6 +9,8 @@ spec:
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
   {{- end }}
+  strategy:
+    {{- toYaml .Values.strategy | nindent 4 }}  
   selector:
     matchLabels:
       {{- include "dedi-agency.selectorLabels" . | nindent 6 }}
@@ -48,7 +50,7 @@ spec:
               protocol: TCP
           envFrom:
           - secretRef:
-              name: dedi-secret
+              name: {{ .Values.secretName }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           volumeMounts:
