@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "battlepass-service.fullname" . }}
+  labels:
+    {{- include "battlepass-service.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - name: http
+      protocol: TCP
+      port: {{ .Values.service.port }}
+      targetPort: {{ .Values.service.targetPort }}      
+  selector:
+    {{- include "battlepass-service.selectorLabels" . | nindent 4 }}

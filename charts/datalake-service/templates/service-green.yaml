@@ -1,0 +1,17 @@
+{{ if eq .Values.deploy "rollout" }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "datalake-service.fullname" . }}-green
+  labels:
+    {{- include "datalake-service.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - name: http
+      protocol: TCP
+      port: {{ .Values.service.port }}
+      targetPort: {{ .Values.service.targetPort }}      
+  selector:
+    {{- include "datalake-service.selectorLabels" . | nindent 4 }}
+{{ end }}
