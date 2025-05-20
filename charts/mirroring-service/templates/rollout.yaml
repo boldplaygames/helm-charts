@@ -2,9 +2,9 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Rollout
 metadata:
-  name: {{ include "match-service.fullname" . }}
+  name: {{ include "mirroring-service.fullname" . }}
   labels:
-    {{- include "match-service.labels" . | nindent 4 }}
+    {{- include "mirroring-service.labels" . | nindent 4 }}
 spec:
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
@@ -13,7 +13,7 @@ spec:
     {{- toYaml .Values.strategy | nindent 4 }}
   selector:
     matchLabels:
-      {{- include "match-service.selectorLabels" . | nindent 6 }}
+      {{- include "mirroring-service.selectorLabels" . | nindent 6 }}
   template:
     metadata:
       {{- with .Values.podAnnotations }}
@@ -21,13 +21,13 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       labels:
-        {{- include "match-service.selectorLabels" . | nindent 8 }}
+        {{- include "mirroring-service.selectorLabels" . | nindent 8 }}
     spec:
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-      serviceAccountName: {{ include "match-service.serviceAccountName" . }}
+      serviceAccountName: {{ include "mirroring-service.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       containers:
@@ -37,8 +37,8 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           envFrom:
-          - configMapRef:
-              name: {{ .Release.Name }}-configmap
+          # - configMapRef:
+          #     name: {{ .Release.Name }}-configmap
           - secretRef:
               name: {{ .Values.secretName }}
           resources:
