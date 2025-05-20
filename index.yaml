@@ -1176,6 +1176,16 @@ entries:
   mirroring-service:
   - apiVersion: v2
     appVersion: 0.0.0
+    created: "2025-05-20T07:22:59.973234365Z"
+    description: A Helm chart for Kubernetes
+    digest: b03c77cf36fc03aef4d809c50af9c4e3fc4f8c27f0e8ba637f5921ad0f9b48fb
+    name: mirroring-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/mirroring-service-0.0.3/mirroring-service-0.0.3.tgz
+    version: 0.0.3
+  - apiVersion: v2
+    appVersion: 0.0.0
     created: "2025-05-20T06:27:38.617494729Z"
     description: A Helm chart for Kubernetes
     digest: f7230b64d8837bd414fde36cd3c36ce36c91ed67a1e21f098e77cb2bda0b145b
@@ -1470,4 +1480,4 @@ entries:
     urls:
     - https://github.com/boldplaygames/helm-charts/releases/download/user-service-0.1.0/user-service-0.1.0.tgz
     version: 0.1.0
-generated: "2025-05-20T06:27:38.617713306Z"
+generated: "2025-05-20T07:22:59.973612971Z"
