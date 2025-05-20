@@ -1075,6 +1075,16 @@ entries:
   match-service:
   - apiVersion: v2
     appVersion: 0.2.0
+    created: "2025-05-20T06:27:38.480305176Z"
+    description: A Helm chart for Kubernetes
+    digest: e3de966540935cf2e9dda7b09dee4124d00e09a94d637050750140ed7ff4cc20
+    name: match-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/match-service-0.3.3/match-service-0.3.3.tgz
+    version: 0.3.3
+  - apiVersion: v2
+    appVersion: 0.2.0
     created: "2025-04-10T01:03:37.136995161Z"
     description: A Helm chart for Kubernetes
     digest: 431ba9848220f7883149c81236b92726014a3b681f0924f883c764d0ae596a2a
@@ -1164,6 +1174,16 @@ entries:
     - https://github.com/boldplaygames/helm-charts/releases/download/match-service-0.1.0/match-service-0.1.0.tgz
     version: 0.1.0
   mirroring-service:
+  - apiVersion: v2
+    appVersion: 0.0.0
+    created: "2025-05-20T06:27:38.617494729Z"
+    description: A Helm chart for Kubernetes
+    digest: f7230b64d8837bd414fde36cd3c36ce36c91ed67a1e21f098e77cb2bda0b145b
+    name: mirroring-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/mirroring-service-0.0.2/mirroring-service-0.0.2.tgz
+    version: 0.0.2
   - apiVersion: v2
     appVersion: 0.0.0
     created: "2025-05-20T02:31:23.555935719Z"
@@ -1450,4 +1470,4 @@ entries:
     urls:
     - https://github.com/boldplaygames/helm-charts/releases/download/user-service-0.1.0/user-service-0.1.0.tgz
     version: 0.1.0
-generated: "2025-05-20T02:31:23.556162363Z"
+generated: "2025-05-20T06:27:38.617713306Z"
