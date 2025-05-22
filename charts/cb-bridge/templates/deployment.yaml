@@ -1,16 +1,17 @@
+{{ if eq .Values.deploy "deployment" }}
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "dedi-service.fullname" . }}
+  name: {{ include "cb-bridge.fullname" . }}
   labels:
-    {{- include "dedi-service.labels" . | nindent 4 }}
+    {{- include "cb-bridge.labels" . | nindent 4 }}
 spec:
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
   {{- end }}
   selector:
     matchLabels:
-      {{- include "dedi-service.selectorLabels" . | nindent 6 }}
+      {{- include "cb-bridge.selectorLabels" . | nindent 6 }}
   template:
     metadata:
       {{- with .Values.podAnnotations }}
@@ -18,13 +19,13 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       labels:
-        {{- include "dedi-service.selectorLabels" . | nindent 8 }}
+        {{- include "cb-bridge.selectorLabels" . | nindent 8 }}
     spec:
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-      serviceAccountName: {{ include "dedi-service.serviceAccountName" . }}
+      serviceAccountName: {{ include "cb-bridge.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       containers:
@@ -34,12 +35,15 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           envFrom:
+          # - configMapRef:
+          #     name: {{ .Release.Name }}-configmap
           - secretRef:
               name: {{ .Values.secretName }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           volumeMounts:
             {{- toYaml .Values.volumeMounts | nindent 12 }}
+      terminationGracePeriodSeconds: 60
       volumes:
       {{- toYaml .Values.volume | nindent 8 }}  
       {{- with .Values.nodeSelector }}
@@ -54,3 +58,4 @@ spec:
       tolerations:
         {{- toYaml . | nindent 8 }}
       {{- end }}
+{{ end }}

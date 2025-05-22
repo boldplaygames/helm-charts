@@ -48,7 +48,7 @@ spec:
               protocol: TCP
           envFrom:
           - secretRef:
-              name: dedi-secret
+              name: {{ .Values.secretName }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           volumeMounts:
