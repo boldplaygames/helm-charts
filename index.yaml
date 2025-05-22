@@ -413,6 +413,17 @@ entries:
     urls:
     - https://github.com/boldplaygames/helm-charts/releases/download/battlepass-service-0.0.1/battlepass-service-0.0.1.tgz
     version: 0.0.1
+  cb-bridge:
+  - apiVersion: v2
+    appVersion: 0.0.0
+    created: "2025-05-22T03:19:40.976664389Z"
+    description: A Helm chart for Kubernetes
+    digest: 101d23c0fc89affc7984fbd4657a77293f484b34a9a5682547ba79a50bda229a
+    name: cb-bridge
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/cb-bridge-0.0.0/cb-bridge-0.0.0.tgz
+    version: 0.0.0
   craft-service:
   - apiVersion: v2
     appVersion: 0.1.0
@@ -526,6 +537,16 @@ entries:
     - https://github.com/boldplaygames/helm-charts/releases/download/datalake-service-0.2.0/datalake-service-0.2.0.tgz
     version: 0.2.0
   dedi-agency:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2025-05-22T03:19:41.16038105Z"
+    description: A Helm chart for Kubernetes
+    digest: b38e60393da485985e5e261041df8bcd3f788233808db266ec982d217c3eb8b7
+    name: dedi-agency
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/dedi-agency-0.2.2/dedi-agency-0.2.2.tgz
+    version: 0.2.2
   - apiVersion: v2
     appVersion: 0.0.1
     created: "2025-03-24T08:03:17.60715504Z"
@@ -678,6 +699,16 @@ entries:
     - https://github.com/boldplaygames/helm-charts/releases/download/dedi-agency-service-0.0.4/dedi-agency-service-0.0.4.tgz
     version: 0.0.4
   dedi-service:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2025-05-22T03:19:41.337020716Z"
+    description: A Helm chart for Kubernetes
+    digest: 086360f6ff8011a5bd032818846ca1440ec1f9619db52424f5b28ee24288829b
+    name: dedi-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/dedi-service-0.2.2/dedi-service-0.2.2.tgz
+    version: 0.2.2
   - apiVersion: v2
     appVersion: 0.1.0
     created: "2025-01-13T03:03:17.445571678Z"
@@ -1176,6 +1207,16 @@ entries:
   mirroring-service:
   - apiVersion: v2
     appVersion: 0.0.0
+    created: "2025-05-22T03:19:41.514657811Z"
+    description: A Helm chart for Kubernetes
+    digest: bf9f8cb184e68494ec87e45aeec4486ffd7ffdadde21f560f4464f5edf4f0a32
+    name: mirroring-service
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/mirroring-service-0.0.4/mirroring-service-0.0.4.tgz
+    version: 0.0.4
+  - apiVersion: v2
+    appVersion: 0.0.0
     created: "2025-05-20T07:22:59.973234365Z"
     description: A Helm chart for Kubernetes
     digest: b03c77cf36fc03aef4d809c50af9c4e3fc4f8c27f0e8ba637f5921ad0f9b48fb
@@ -1480,4 +1521,4 @@ entries:
     urls:
     - https://github.com/boldplaygames/helm-charts/releases/download/user-service-0.1.0/user-service-0.1.0.tgz
     version: 0.1.0
-generated: "2025-05-20T07:22:59.973612971Z"
+generated: "2025-05-22T03:19:41.515066935Z"
