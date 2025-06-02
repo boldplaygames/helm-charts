@@ -416,6 +416,16 @@ entries:
   cb-bridge:
   - apiVersion: v2
     appVersion: 0.0.0
+    created: "2025-06-02T09:12:23.560569231Z"
+    description: A Helm chart for Kubernetes
+    digest: f8ab60e866eb0d291888db5bebf7bbb2ff8ba48480467a90d29a239af6dc05e0
+    name: cb-bridge
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/cb-bridge-0.0.1/cb-bridge-0.0.1.tgz
+    version: 0.0.1
+  - apiVersion: v2
+    appVersion: 0.0.0
     created: "2025-05-22T03:19:40.976664389Z"
     description: A Helm chart for Kubernetes
     digest: 101d23c0fc89affc7984fbd4657a77293f484b34a9a5682547ba79a50bda229a
@@ -1521,4 +1531,4 @@ entries:
     urls:
     - https://github.com/boldplaygames/helm-charts/releases/download/user-service-0.1.0/user-service-0.1.0.tgz
     version: 0.1.0
-generated: "2025-05-22T03:19:41.515066935Z"
+generated: "2025-06-02T09:12:23.560805862Z"
