@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "dediping.fullname" . }}
+  labels: {{- include "dediping.labels" . | nindent 4 }}
+spec:
+  sessionAffinity: ClientIP # For Websocket Session
+  type: {{ .Values.service.type }}
+  ports:
+    - name: http
+      protocol: TCP
+      port: {{ .Values.service.port }}
+      targetPort: {{ .Values.service.targetPort }}
+  selector: {{- include "dediping.selectorLabels" . | nindent 4 }}
+
