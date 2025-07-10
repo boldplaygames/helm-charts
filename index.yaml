@@ -752,6 +752,16 @@ entries:
   dediping:
   - apiVersion: v2
     appVersion: 0.0.0
+    created: "2025-07-10T09:21:33.744129018Z"
+    description: A Helm chart for Kubernetes
+    digest: e9d66da31e57f7f32e516b830f593454853173e3ab9e78ccfd91d8ae0a46423d
+    name: dediping
+    type: application
+    urls:
+    - https://github.com/boldplaygames/helm-charts/releases/download/dediping-0.0.3/dediping-0.0.3.tgz
+    version: 0.0.3
+  - apiVersion: v2
+    appVersion: 0.0.0
     created: "2025-07-10T09:16:33.265677232Z"
     description: A Helm chart for Kubernetes
     digest: 02902c476b32c2bc8b6b6b186b6e95f28dc21dce4197e32508ffb4834e16ad01
@@ -1562,4 +1572,4 @@ entries:
     urls:
     - https://github.com/boldplaygames/helm-charts/releases/download/user-service-0.1.0/user-service-0.1.0.tgz
     version: 0.1.0
-generated: "2025-07-10T09:16:33.266031021Z"
+generated: "2025-07-10T09:21:33.744454176Z"
