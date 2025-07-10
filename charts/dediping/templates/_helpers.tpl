@@ -50,13 +50,13 @@ app.kubernetes.io/name: {{ include "dediping.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
 {{- end }}
 
-{{/*
-Create the name of the service account to use
-*/}}
-{{- define "dediping.serviceAccountName" -}}
-{{- if .Values.serviceAccount.create }}
-{{- default (include "dediping.fullname" .) .Values.serviceAccount.name }}
-{{- else }}
-{{- default "default" .Values.serviceAccount.name }}
-{{- end }}
-{{- end }}
+# {{/*
+# Create the name of the service account to use
+# */}}
+# {{- define "dediping.serviceAccountName" -}}
+# {{- if .Values.serviceAccount.create }}
+# {{- default (include "dediping.fullname" .) .Values.serviceAccount.name }}
+# {{- else }}
+# {{- default "default" .Values.serviceAccount.name }}
+# {{- end }}
+# {{- end }}
